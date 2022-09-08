@@ -1,0 +1,22 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+/* COMMON */
+
+html {
+  font-size: 62,5%;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* HEADER */
+/* MAIN */
+/* FOOTER */
+/* DEBUG */
