@@ -67,6 +67,24 @@ main{
   border: 1px solid black;
 }
 
+/* FLEX */
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;  
+  align-content: flex-start;
+  justify-content: center;
+  gap: 1em;
+}
+
+/* FLEX-ITEMS */
+.card{
+   /* DEBUG */
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
 /* FOOTER */
 footer{
   height: 80px;
