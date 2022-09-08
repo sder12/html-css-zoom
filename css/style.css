@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 /* COMMON */
@@ -16,7 +16,32 @@ img{
   max-width: 100%;
 }
 
+.vh-wrapper{
+  background-color: lightcyan;
+  width: 100%;
+  height: 100vh;
+}
 /* HEADER */
+
+header{
+  height: 60px;
+  width: 100%;
+  background-color: lightcoral;
+}
+
 /* MAIN */
+
+main{
+  height: calc(100% - (60px + 80px));
+  width: 100%;
+  background-color: rgb(29, 123, 123);
+}
+
 /* FOOTER */
+footer{
+  height: 80px;
+  width: 100%;
+  background-color: lightgreen;
+} 
+
 /* DEBUG */
