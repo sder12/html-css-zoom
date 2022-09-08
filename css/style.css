@@ -37,14 +37,17 @@ header{
 }
 
 .header-speaker, .header-zoom{
-  background-color: blue; 
-  padding: 2em 2em;
+  background-color: #4a4a4a; 
+  font-size: .8rem;
+  padding: .4em;
+  border: 1px solid #4a4a4a;
+  border-radius: 5px;
 }
 
 .positon-abso{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 6px;
+  right: 5px;
 }
 
 /* MAIN */
