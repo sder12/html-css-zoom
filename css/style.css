@@ -42,8 +42,7 @@ header {
 .header-zoom {
   background-color: #4a4a4a;
   font-size: 0.8rem;
-  padding: 0.4em;
-  border: 1px solid #4a4a4a;
+  padding: 0.4em;  
   border-radius: 5px;
 }
 
@@ -116,6 +115,7 @@ footer {
 
 footer .fa-solid:not(.fa-angle-up), footer .fa-brands{
   font-size: 1.8rem;    
+  padding-bottom: .2em;
 }
 
 h4{
