@@ -121,20 +121,7 @@ footer {
   background-color: lightgreen;
 }
 
-.foot-left {
-  display: flex;
-  align-items: center;
-  /* DEBUG */
-  width: 20%;
-  height: 100%;
-  background-color: lightcoral;
-}
-.foot-left > div{
-  margin-left: 1em; 
-}
-
-
-footer .fa-solid:not(.fa-angle-up){
+footer .fa-solid:not(.fa-angle-up), footer .fa-brands{
   font-size: 1.8rem;  
 }
 
@@ -143,27 +130,52 @@ h4{
   font-size: .9rem;
 }
 
-.foot-center {
-  /* DEBUG */
-  width: 60%;
-  height: 100%;
-  background-color: lightgoldenrodyellow;
-}
-.foot-right {
-  /* DEBUG */
+/* FOOTER LEFT */
+.foot-left {
+  display: flex;
+  align-items: center;
   width: 20%;
   height: 100%;
-  background-color: lightseagreen;
+  /* DEBUG */
+  background-color: lightcoral;
+}
+.foot-left > div{
+  margin-left: 1em; 
+}
+
+/* FOOTER CENTER */
+
+.foot-center {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  /* DEBUG */
+  background-color: rgb(105, 105, 93);
+}
+
+.fa-share-square{
+  color: greenyellow;
+}
+
+/* FOOT RIGHT */
+.foot-right {
+  width: 20%;
+  height: 100%;
   position: relative;
+  /* DEBUG */
+  background-color: lightseagreen;
 }
 
 .foot-right-box{
   height: 100%;
   width: 40%;
-  background-color: rgba(255, 255, 255, 0.318);
   position: absolute;
   right: 0;
-  
+  /* DEBUG */
+  background-color: rgba(255, 255, 255, 0.318);
 }
 
 .foot-right-box span{
@@ -172,7 +184,6 @@ h4{
   line-height: 80px;
   padding-left: 1em;  
 }
-
 
 
 
