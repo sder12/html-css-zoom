@@ -122,7 +122,7 @@ footer {
 }
 
 footer .fa-solid:not(.fa-angle-up), footer .fa-brands{
-  font-size: 1.8rem;  
+  font-size: 1.8rem;    
 }
 
 h4{
@@ -141,6 +141,7 @@ h4{
 }
 .foot-left > div{
   margin-left: 1em; 
+  text-align: center;
 }
 
 /* FOOTER CENTER */
@@ -158,6 +159,10 @@ h4{
 
 .fa-share-square{
   color: greenyellow;
+}
+
+.foot-center > div{
+  text-align: center;  
 }
 
 /* FOOT RIGHT */
