@@ -85,6 +85,7 @@ main{
   margin-bottom: 1em;
   min-height: 100px;
   /* height? cosa mettere */
+  position: relative;
 
   /* BG-IMAGE */
   background-image: url(https://picsum.photos/200);
@@ -99,6 +100,16 @@ main{
 
 .main-container >.card:nth-child(7n){
   margin-right: 0;
+}
+
+/* CARD-CAPTION */
+.card-caption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(79, 78, 78, 0.454); 
+  font-size: .7rem;
+  padding: .3em;
 }
 
 /* FOOTER */
