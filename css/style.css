@@ -9,18 +9,18 @@
 /* COMMON */
 
 html {
-  font-size: 62,5%;
+  font-size: 62, 5%;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
 /* WRAPPER */
 
-.vh-wrapper{
+.vh-wrapper {
   background-color: lightcyan;
   width: 100%;
   height: 100vh;
@@ -28,23 +28,24 @@ img{
 
 /* HEADER */
 
-header{
+header {
   height: 60px;
   width: 100%;
   position: relative;
-  /* DEBUG */  
+  /* DEBUG */
   background-color: lightcoral;
 }
 
-.header-speaker, .header-zoom{
-  background-color: #4a4a4a; 
-  font-size: .8rem;
-  padding: .4em;
+.header-speaker,
+.header-zoom {
+  background-color: #4a4a4a;
+  font-size: 0.8rem;
+  padding: 0.4em;
   border: 1px solid #4a4a4a;
   border-radius: 5px;
 }
 
-.positon-abso{
+.positon-abso {
   position: absolute;
   top: 6px;
   right: 5px;
@@ -52,14 +53,14 @@ header{
 
 /* MAIN */
 
-main{
+main {
   height: calc(100% - (60px + 80px));
   width: 100%;
   /* DEBUG */
   background-color: rgb(29, 123, 123);
 }
 
-.main-container{
+.main-container {
   width: 80%;
   margin: 0 auto;
   height: 100%;
@@ -70,16 +71,15 @@ main{
 
 /* FLEX */
 
-.flex{
+.flex {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
 }
 
-
 /* FLEX-ITEMS */
-.card{
+.card {
   width: calc((100% / 7) - 1em);
   margin-right: 1em;
   margin-bottom: 1em;
@@ -95,37 +95,57 @@ main{
 
   /* DEBUG */
   background-color: yellow;
-  border: 1px solid black; 
+  border: 1px solid black;
 }
 
-.main-container >.card:nth-child(7n){
+.main-container > .card:nth-child(7n) {
   margin-right: 0;
 }
 
 /* CARD-CAPTION */
-.card-caption{
+.card-caption {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(79, 78, 78, 0.454); 
-  font-size: .7rem;
-  padding: .3em;
+  background-color: rgba(79, 78, 78, 0.454);
+  font-size: 0.7rem;
+  padding: 0.3em;
 }
 
 /* FOOTER */
-footer{
+footer {
   height: 80px;
   width: 100%;
+  display: flex;
   /* DEBUG */
   background-color: lightgreen;
-} 
+}
+
+.foot-left {
+  /* DEBUG */
+  width: 20%;
+  height: 100%;
+  background-color: lightcoral;
+}
+.foot-center {
+  /* DEBUG */
+  width: 60%;
+  height: 100%;
+  background-color: lightgoldenrodyellow;
+}
+.foot-right {
+  /* DEBUG */
+  width: 20%;
+  height: 100%;
+  background-color: lightseagreen;
+}
 
 /* DEBUG */
 
-.border{
+.border {
   border: 1px solid black;
 }
 
-.wborder{
+.wborder {
   border: 1px solid black;
 }
