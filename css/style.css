@@ -57,13 +57,14 @@ header {
 main {
   height: calc(100% - (60px + 80px));
   width: 100%;
+  overflow: auto;
 }
 
 .main-container {
   width: 80%;
   margin: 0 auto;
-  height: 100%;
-  overflow: hidden;
+  /* height: 100%; */
+  /* overflow: hidden; */  
 }
 
 /* FLEX */
@@ -80,8 +81,7 @@ main {
   width: calc((100% / 7) - 1em);
   margin-right: 1em;
   margin-bottom: 1em;
-  min-height: 100px;
-  /* height? cosa mettere */
+  min-height: 100px; 
   position: relative;
 
   /* BG-IMAGE */
@@ -89,7 +89,10 @@ main {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+   /* se metto in background poi devo settare altezza
+   al contrario se inserivo <img> il contenitore si adattava*/
 }
+
 
 .main-container > .card:nth-child(7n) {
   margin-right: 0;
@@ -123,7 +126,8 @@ h4{
   font-size: .9rem;
 }
 
-/* FOOTER LEFT */
+/* FOOTER LEFT 
+si doveva realizzare con unordered list*/
 .foot-left {
   display: flex;
   align-items: center;
@@ -135,6 +139,7 @@ h4{
   margin-left: 1em; 
   text-align: center;
 }
+/* potevo dare anche flex-direction column */
 
 /* FOOTER CENTER */
 
@@ -156,6 +161,7 @@ h4{
 }
 
 /* FOOT RIGHT */
+/* invece che div potevo utilizzare tag button */
 .foot-right {
   width: 20%;
   height: 100%;
@@ -164,17 +170,17 @@ h4{
 
 .foot-right-box{
   height: 100%;
-  width: 40%;
+  width: 50%;
   position: absolute;
   right: 0;
   background-color: rgba(255, 255, 255, 0.318);
+  text-align: center;
 }
 
 .foot-right-box span{
   font-size: 1rem;
   color: red;
-  line-height: 80px;
-  padding-left: 1em;  
+  line-height: 80px;   
 }
 
 
@@ -189,3 +195,18 @@ h4{
 .wborder {
   border: 1px solid black;
 }
+
+
+/* NB
+1. creare griglia con class: container > row > col > card 
+2. background-image richiede height fissa            
+   tag <img> si adatta al contenitore con percentuale
+3. spazio tra card: gap di flex / padding / margin - 
+    margin comporta togliero all'ultima card della riga
+4. IMG quasi mai in % preferibile FRAZIONE
+5. se avessi messo <img> (invece che bg-img) avrei dovuto darle dispaly:block
+  per togliere linea nera di bordo - bag image
+6. anchor tag <a> non eredita!
+7. MENU LIST in unordered list, non solo header anche footer!!!
+8. button is a inline-block
+*/
